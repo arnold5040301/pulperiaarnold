@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Enlace a FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Pantalla de carga (Preloader) -->
+<div id="preloader">
+    <div class="loader">
+        <img src="img/logo.jpg" alt="Logo de la empresa" class="logo">
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <p class="loading-text">Cargando...</p>
+    </div>
+</div>
+
+    <!-- Menú de navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo.jpg" alt="Logo de la empresa">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Categoría</a></li>
+                <li><a href="#galeria">Productos</a></li>
+                <li><a href="#footer">Nosotros</a></li>
+            </ul>
+        </nav>
+
+        <!-- Sección de Carrusel -->
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="img/vendedor.png" alt="Imagen 1">
+                    <div class="carousel-text">
+                        <h1>Pulperia el catracho</h1>
+                        <p>Encuentra variedades de productos y más.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/pasta_colgate.png" alt="Imagen 2">
+                    <div class="carousel-text">
+                        <h1>Pulperia el catracho</h1>
+                        <p>Encuentra variedades de productos y más</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/shampoo.png" alt="Imagen 3">
+                    <div class="carousel-text">
+                        <h1>Pulperia el catracho</h1>
+                        <p>Encuentra variedades de productos y más</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/aceite.png" alt="Imagen 4">
+                    <div class="carousel-text">
+                        <h1>Pulperia el catracho</h1>
+                        <p>Encuentra variedades de productos y más</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botones de navegación del carrusel -->
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+    </header>
+
+    <!-- Sección de Productos -->
+<section id="productos">
+    <h2>Nuestras Categorías de Productos</h2>
+    <div class="product-grid">
+        <!-- Categoría 1 -->
+        <div class="product-card">
+            <img src="img/carne.ico" alt="Categoría 1">
+            <h3>Carnes</h3>
+            <p>Las mejores carnes frescas y de calidad premium para todas tus comidas. Ideal para asados y recetas especiales.</p>
+        </div>
+        <!-- Categoría 2 -->
+        <div class="product-card">
+            <img src="img/frutas_y_vegetales.ico" alt="Categoría 2">
+            <h3>Verduras y Frutas</h3>
+            <p>Disfruta de una amplia selección de verduras y frutas frescas, directamente del campo a tu mesa.</p>
+        </div>
+        <!-- Categoría 3 -->
+        <div class="product-card">
+            <img src="img/sodas.ico" alt="Categoría 3">
+            <h3>Refrescos</h3>
+            <p>Bebidas refrescantes para cada ocasión. Encuentra tus marcas favoritas con el mejor sabor y variedad.</p>
+        </div>
+        <!-- Categoría 4 -->
+        <div class="product-card">
+            <img src="img/chips.ico" alt="Categoría 4">
+            <h3>Botanas</h3>
+            <p>Deliciosas botanas para compartir o disfrutar solo. Perfectas para acompañar tus momentos de diversión.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Galería -->
+<section id="galeria">
+    <h2>Galería de Productos</h2>
+    <div class="gallery-grid">
+        <!-- Primeras 6 imágenes -->
+        <div class="gallery-item">
+            <img src="img/yogurt sabor manzana.png" alt="Producto 1">
+        </div>
+        <div class="gallery-item">
+            <img src="img/queso procesado.png" alt="Producto 2">
+        </div>
+        <div class="gallery-item">
+            <img src="img/mantequilla.png" alt="Producto 3">
+        </div>
+        <div class="gallery-item">
+            <img src="img/malteada fresa.png" alt="Producto 4">
+        </div>
+        <div class="gallery-item">
+            <img src="img/jugo de naranja.png" alt="Producto 5">
+        </div>
+        <div class="gallery-item">
+            <img src="img/chips platano rica sula.png" alt="Producto 6">
+        </div>
+    </div>
+
+    <!-- Botón Mostrar más -->
+    <button id="mostrar-mas" class="btn">Mostrar más</button>
+
+    <!-- Sección de otras 6 imágenes que se ocultará inicialmente -->
+    <div class="gallery-grid extra-images" id="extra-images">
+        <div class="gallery-item">
+            <img src="img/sixpack malteada.png" alt="Producto 7">
+        </div>
+        <div class="gallery-item">
+            <img src="img/margarina.png" alt="Producto 8">
+        </div>
+        <div class="gallery-item">
+            <img src="img/churro futbolito.png" alt="Producto 9">
+        </div>
+        <div class="gallery-item">
+            <img src="img/chorizo delicia.png" alt="Producto 10">
+        </div>
+        <div class="gallery-item">
+            <img src="img/chorizo argentino.png" alt="Producto 11">
+        </div>
+        <div class="gallery-item">
+            <img src="img/chorizo cervecero delicia.png" alt="Producto 12">
+        </div>
+    </div>
+
+    <!-- Botón Mostrar menos -->
+    <button id="mostrar-menos" class="btn" style="display:none;">Mostrar menos</button>
+
+    <!-- Modal para visualizar imagen en grande -->
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img-grande">
+        <div id="caption"></div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="footer-icons">
+        <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook-f icon"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <i class="fab fa-twitter icon"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <i class="fab fa-instagram icon"></i>
+        </a>
+    </div>
+    
+    <p class="location">Colonia El Peligroso | Horario 7:00 am - 9:00 pm</p>
+    <p class="rights">Derechos Reservados 2024</p>
+    <p class="design">Design by <a href="https://www.instagram.com/arnold.mz" target="_blank">Arnold.mz</a></p>
+</footer>
+
+
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
